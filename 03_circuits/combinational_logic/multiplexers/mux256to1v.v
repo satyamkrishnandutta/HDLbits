@@ -1,0 +1,12 @@
+// ============================================================================
+// Problem : 256-to-1 4-bit multiplexer
+// Link    : https://hdlbits.01xz.net/wiki/mux256to1v
+// ============================================================================
+
+module top_module (
+    // Input/output port definitions
+);
+
+    // Write solution logic here
+
+endmodule

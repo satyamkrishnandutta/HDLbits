@@ -1,0 +1,12 @@
+// ============================================================================
+// Problem : Step_One
+// Link    : https://hdlbits.01xz.net/wiki/step_one
+// ============================================================================
+
+module top_module( output one );
+
+// Insert your code here
+    assign one =1'b1;
+
+endmodule
+
