@@ -1,0 +1,12 @@
+// ============================================================================
+// Problem : Slow decade counter
+// Link    : https://hdlbits.01xz.net/wiki/Countslow
+// ============================================================================
+
+module top_module (
+    // Input/output port definitions
+);
+
+    // Write solution logic here
+
+endmodule
