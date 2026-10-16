@@ -3,10 +3,9 @@
 // Link    : https://hdlbits.01xz.net/wiki/Step_one
 // ============================================================================
 
-module top_module (
-    // Input/output port definitions
-);
+module top_module( output one );
 
-    // Write solution logic here
+// Insert your code here
+    assign one =1'b1;
 
 endmodule
