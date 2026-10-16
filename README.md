@@ -3,7 +3,7 @@
 ![Verilog](https://img.shields.io/badge/Language-Verilog_2001-blue.svg)
 ![Status](https://img.shields.io/badge/Progress-In_Progress-orange.svg)
 ![Platform](https://img.shields.io/badge/Platform-HDLBits-brightgreen.svg)
-![HDLBits Profile](https://img.shields.io/badge/HDLBits_User-YOUR__HDLBITS__USERNAME-1081C4?style=flat&logo=circuit-board)
+![HDLBits Profile](https://img.shields.io/badge/HDLBits_User-SatyamDutta-1081C4?style=flat&logo=circuit-board)
 
 A complete, structured repository containing verified solution sets, hardware design patterns, and testbenches for all ~180 problems on [HDLBits](https://hdlbits.01xz.net/wiki/Main_Page).
 
