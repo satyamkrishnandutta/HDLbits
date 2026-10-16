@@ -3,10 +3,7 @@
 // Link    : https://hdlbits.01xz.net/wiki/wire
 // ============================================================================
 
-module top_module (
-    // Input/output port definitions
-);
-
-    // Write solution logic here
-
+module top_module( input in, output out );
+	assign out=in;
 endmodule
+
