@@ -4,9 +4,12 @@
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
-);
+    input [7:0] a, b, c, d,
+    output [7:0] min);//
 
-    // Write solution logic here
+    wire [7:0] w1,w2;
+    assign w1 = (a>b) ? b : a;
+    assign w2 = (c>d) ? d : c;
+    assign min = (w1>w2) ? w2 : w1;
 
 endmodule
