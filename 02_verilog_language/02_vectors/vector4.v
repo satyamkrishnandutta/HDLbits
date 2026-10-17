@@ -1,12 +1,12 @@
 // ============================================================================
-// Problem : Vector reversal 1
-// Link    : https://hdlbits.01xz.net/wiki/vector1r
+// Problem : Vector 4
+// Link    : https://hdlbits.01xz.net/wiki/vector4
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
-);
+    input [7:0] in,
+    output [31:0] out );//
 
-    // Write solution logic here
-
+    assign out={{24{in[7]}},in};
 endmodule
+
