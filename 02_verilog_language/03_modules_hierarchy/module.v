@@ -3,10 +3,7 @@
 // Link    : https://hdlbits.01xz.net/wiki/module
 // ============================================================================
 
-module top_module (
-    // Input/output port definitions
-);
-
-    // Write solution logic here
-
+module top_module ( input a, input b, output out );
+    mod_a ins1(a,b,out);
 endmodule
+
