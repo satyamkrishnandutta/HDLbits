@@ -1,12 +1,11 @@
 // ============================================================================
-// Problem : Gates and vectors
-// Link    : https://hdlbits.01xz.net/wiki/gates100
+// Problem : Wire
+// Link    : https://hdlbits.01xz.net/wiki/Exams/m2014_q4h
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
-);
-
-    // Write solution logic here
-
+    input in,
+    output out);
+	assign out=in;
 endmodule
+
