@@ -22,8 +22,8 @@ A complete, structured repository containing verified solution sets, hardware de
 | Section | Sub-Topic | Total Problems | Status |
 | :--- | :--- | :---: | :---: |
 | **01. Verilog Language** | Basics, Vectors, Modules, Procedures, Features | 34 | ✅ Completed |
-| **02. Circuits** | Combinational Logic (Gates, Muxes, Adders, K-Maps) | 36 | 🔄 In Progress |
-| **02. Circuits** | Sequential Logic (DFFs, Counters, Shift Regs, FSMs) | 60 | ⏳ Pending |
+| **02. Circuits** | Combinational Logic (Gates, Muxes, Adders, K-Maps) | 36 | ✅ Completed |
+| **02. Circuits** | Sequential Logic (DFFs, Counters, Shift Regs, FSMs) | 60 | 🔄 In Progress |
 | **02. Circuits** | Building Larger Circuits | 7 | ⏳ Pending |
 | **03. Verification** | Reading Simulations & Finding Bugs | 15 | ⏳ Pending |
 | **04. Verification** | Writing Testbenches | 4 | ⏳ Pending |
