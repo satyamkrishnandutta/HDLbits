@@ -4,9 +4,13 @@
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
-);
+    input clk,    // Clocks are used in sequential circuits
+    input d,
+    output reg q );//
 
-    // Write solution logic here
+    always @(posedge clk) begin
+        q<=d;
+    end
 
 endmodule
+

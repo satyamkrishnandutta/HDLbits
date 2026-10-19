@@ -4,9 +4,21 @@
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
+    input clk,
+    input resetn,
+    input [1:0] byteena,
+    input [15:0] d,
+    output [15:0] q
 );
-
-    // Write solution logic here
-
+    always @(posedge clk)begin
+        if(~resetn)
+            q<=16'h0000;
+        else begin
+            if(byteena[0])
+                q[7:0]<=d[7:0];
+            if(byteena[1])
+                q[15:8]<=d[15:8];
+        end
+    end
 endmodule
+

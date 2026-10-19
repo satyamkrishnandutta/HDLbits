@@ -4,9 +4,14 @@
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
+    input clk,
+    input [7:0] in,
+    output [7:0] pedge
 );
-
-    // Write solution logic here
-
+    reg [7:0] w = 8'h0000;
+    always @(posedge clk)begin
+        pedge <= in&(~w);
+        w<=in;
+    end
 endmodule
+

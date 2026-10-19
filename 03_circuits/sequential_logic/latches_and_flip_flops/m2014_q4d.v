@@ -4,9 +4,13 @@
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
-);
-
-    // Write solution logic here
-
+    input clk,
+    input in, 
+    output out);
+	wire d;
+    assign d=out^in;
+    always @(posedge clk)begin
+        out<=d;
+    end
 endmodule
+

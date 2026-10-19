@@ -4,9 +4,21 @@
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
-);
-
-    // Write solution logic here
-
+    input clk,
+    input j,
+    input k,
+    output Q); 
+    wire D;
+    assign D=~Q&j | j&~k | Q&~k;
+    dff ins1(.clk(clk),.d(D),.q(Q));
 endmodule
+
+module dff(
+    input clk,d,
+    output q
+);
+    always @(posedge clk)begin
+        q<=d;
+    end
+endmodule
+

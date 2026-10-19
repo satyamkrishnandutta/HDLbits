@@ -4,9 +4,13 @@
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
+    input clk,
+    input [7:0] in,
+    output [7:0] anyedge
 );
-
-    // Write solution logic here
-
+    reg [7:0] prev=8'h00;
+    always @(posedge clk)begin 
+        anyedge <= (~in&prev) | (in&~prev);
+        prev<=in;
+    end
 endmodule

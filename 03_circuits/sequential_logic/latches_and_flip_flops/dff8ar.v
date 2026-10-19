@@ -4,9 +4,19 @@
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
+    input clk,
+    input areset,   // active high asynchronous reset
+    input [7:0] d,
+    output [7:0] q
 );
-
-    // Write solution logic here
-
+    always @(posedge clk or posedge areset)begin
+        if(areset)
+            q<=8'h00;
+        else
+            q<=d;
+    end
+        
+    
 endmodule
+
+

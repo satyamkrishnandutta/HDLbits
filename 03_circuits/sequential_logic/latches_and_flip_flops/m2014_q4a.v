@@ -4,9 +4,12 @@
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
-);
-
-    // Write solution logic here
-
+    input d, 
+    input ena,
+    output q);
+    always @(*) begin
+        if(ena)
+            q=d;
+    end
 endmodule
+

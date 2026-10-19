@@ -4,9 +4,16 @@
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
+    input clk,
+    input reset,
+    input [7:0] d,
+    output reg [7:0] q
 );
-
-    // Write solution logic here
-
+    always @(negedge clk) begin
+        if(reset)
+            q<=8'h34;
+        else
+            q<=d;
+    end
 endmodule
+

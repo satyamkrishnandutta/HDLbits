@@ -4,9 +4,15 @@
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
+    input clk,
+    input reset,            // Synchronous reset
+    input [7:0] d,
+    output [7:0] q
 );
-
-    // Write solution logic here
-
+    always @(posedge clk) begin
+        if(reset)
+            q<=8'h00;
+        else
+            q<=d;
+    end
 endmodule

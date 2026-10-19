@@ -4,9 +4,17 @@
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
+    input clk,
+    input reset,
+    input [31:0] in,
+    output [31:0] out
 );
-
-    // Write solution logic here
-
+    reg [31:0] prev=32'h00000000;
+    always @(posedge clk)begin
+        if(reset)
+            out<=32'h00000000;
+        else
+            out<= out | (prev&~in);
+       	prev<=in;    
+    end
 endmodule
