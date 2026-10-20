@@ -3,10 +3,22 @@
 // Link    : https://hdlbits.01xz.net/wiki/rule90
 // ============================================================================
 
-module top_module (
-    // Input/output port definitions
-);
-
-    // Write solution logic here
-
+module top_module(
+    input clk,
+    input load,
+    input [511:0] data,
+    output [511:0] q ); 
+    always@(posedge clk)begin
+        if(load)
+            q=data;
+        else
+            for(int i=0;i<512;i++)begin
+                if(i==0)
+                    q[0]<=0^q[1];
+                else if(i==511)
+                    q[511]<=0^q[510];
+                else
+                    q[i]<=q[i-1]^q[i+1];
+            end
+    end
 endmodule
