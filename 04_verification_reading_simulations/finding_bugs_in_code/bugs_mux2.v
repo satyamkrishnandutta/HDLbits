@@ -4,9 +4,12 @@
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
-);
+    input sel,
+    input [7:0] a,
+    input [7:0] b,
+    output [7:0] out  );
 
-    // Write solution logic here
+    assign out = ({8{sel}} & a) | ({8{~sel}} & b);
 
 endmodule
+
