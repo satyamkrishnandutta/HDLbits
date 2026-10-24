@@ -4,9 +4,12 @@
 // ============================================================================
 
 module top_module (
-    // Input/output port definitions
-);
+    input a,
+    input b,
+    input c,
+    input d,
+    output q );//
 
-    // Write solution logic here
+    assign q = b | c;
 
 endmodule
